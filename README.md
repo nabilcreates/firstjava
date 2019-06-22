@@ -2,10 +2,7 @@
 ## What does it do?
 -   There are two main methods.
     -   generate_random_array(int random_limit, int maximum_elements)
-    -   um_of_arr(double[] arr)
-
-## License?
-> Ha Ha Ha, im gonna license my program which does nothing in significance, how does it sound to you?
+    -   sum_of_arr(double[] arr)
 
 What it does is to first generate a random array and then add the sum together. Cool? I think it is, nice for my first OFFICIAL program.
 
