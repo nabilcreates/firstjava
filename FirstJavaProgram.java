@@ -29,6 +29,15 @@ public class FirstJavaProgram{
         return return_array;
 
     }
+
+    public static void printArray(double[] arr){
+        // Loop the array
+        for(int i = 0; i < arr.length; i++){
+    
+            // Print the values
+            System.out.println(i + ": " + arr[i]);
+        }
+    }
      
     public static void main(String[] args){
         // Variable to hold array
@@ -37,12 +46,8 @@ public class FirstJavaProgram{
         // Variable for sum of the array
         double sum_of_array = sum_of_arr(arr);
 
-        // Loop the array
-        for(int i = 0; i < arr.length; i++){
-
-            // Print the values
-            System.out.println(i + ": " + arr[i]);
-        }
+        // Run the printArray method (attempt to declutter code)
+        printArray(arr);
 
         // Print the sum
         System.out.println("Total sum: " + sum_of_array);
