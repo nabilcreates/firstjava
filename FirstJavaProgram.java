@@ -1,9 +1,9 @@
 public class FirstJavaProgram{
 
-    public static double sum_of_arr(double[] arr){
+    public static int sum_of_arr(long[] arr){
 
         // Variable for the sum
-        double sum = 0;
+        int sum = 0;
 
         // Loop the array and add the array value to the sum
         for(int i = 0; i < arr.length; i++){
@@ -14,15 +14,15 @@ public class FirstJavaProgram{
         return sum;
     }
 
-    public static double[] generate_random_array(int random_limit, int maximum_elements){
+    public static long[] generate_random_array(int random_limit, int maximum_elements){
 
-        // Create an array of double and the value to an array of double with the size
-        double[] return_array = new double[maximum_elements];
+        // Create an array of long and the value to an array of long with the size
+        long[] return_array = new long[maximum_elements];
         
         // Loop through array and set the value to the random number
         for(int i = 0; i < maximum_elements; i++){
             // Generate random number and round it and set it to the value
-            return_array[i] = (double) (Math.round(Math.random() * random_limit));
+            return_array[i] = (long) (Math.round(Math.random() * random_limit));
         }
         
         // Return the array
@@ -30,21 +30,21 @@ public class FirstJavaProgram{
 
     }
 
-    public static void printArray(double[] arr){
+    public static void printArray(long[] arr){
         // Loop the array
         for(int i = 0; i < arr.length; i++){
     
             // Print the values
-            System.out.println(i + ": " + arr[i]);
+            System.out.println((i+1) + ": " + arr[i]);
         }
     }
      
     public static void main(String[] args){
         // Variable to hold array
-        double[] arr = generate_random_array(100, 10);
+        long[] arr = generate_random_array(100, 10);
 
         // Variable for sum of the array
-        double sum_of_array = sum_of_arr(arr);
+        int sum_of_array = sum_of_arr(arr);
 
         // Run the printArray method (attempt to declutter code)
         printArray(arr);
